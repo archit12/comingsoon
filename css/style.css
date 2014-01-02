@@ -1,0 +1,56 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: 'firefight'; /*a name to be used later*/
+	src: url('../font/firefight-bb/firefightbb_reg.ttf'); /*URL to font*/
+}
+.container {
+	position: relative;
+    display: block;
+    overflow: hidden;
+	background-color: #000;
+    height: 100%;
+    text-align: center;
+}
+.splash-partition {
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.left {
+	background-color: #577FB1;
+	color: black;
+	width: 65%;
+	margin-left: -20%;
+	-webkit-transform: skew(-15deg);
+	   -moz-transform: skew(-15deg);
+	     -o-transform: skew(-15deg);
+	     	transform: skew(-15deg);
+}
+.right {
+	background-color: #000;
+	color: white;
+	width: 55%;
+	-webkit-transform: skew(-15deg);
+	   -moz-transform: skew(-15deg);
+	     -o-transform: skew(-15deg);
+	     	transform: skew(-15deg);
+}
+.left span {
+	float: right;
+	font-size: 8vw;
+	font-family: 'firefight';
+	padding-right: 2%;
+}
+.right span {
+	float: left;
+	font-size: 8vw;
+	font-family: 'firefight';
+	padding-left: 2%;
+}

@@ -1,0 +1,300 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'forque';
+	src: url('../fonts/forque/forque.ttf'),
+         url('../fonts/forque/forque.eot'); /* IE9  */
+}
+@font-face {
+    font-family: 'american';
+    src: url('../fonts/american/American Purpose.ttf');
+}
+@font-face {
+    font-family: 'quantum';
+    src: url('../fonts/quantum3/Quantum.otf');
+}
+.container {
+	z-index:1;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	background-color: #EED995;
+	height: 100%;
+	width: 100%;
+    /* background-image: url('../images/SI_logo.png');
+    background-position: 50% 50%;
+    background-size: 80%;
+    background-repeat: no-repeat; */
+    background-color: #eee;
+}
+.skew {
+	-webkit-transform: skew(-15deg);
+	   -moz-transform: skew(-15deg);
+	     -o-transform: skew(-15deg);
+	        transform: skew(-15deg);
+}
+.rotated {
+    -webkit-transform: rotateZ(-75deg);
+	   -moz-transform: rotateZ(-75deg);
+	     -o-transform: rotateZ(-75deg);
+	        transform: rotateZ(-75deg);
+}
+.unskew {
+	-webkit-transform: skew(15deg);
+	   -moz-transform: skew(15deg);
+	     -o-transform: skew(15deg);
+	        transform: skew(15deg);
+}
+.background-div {
+	z-index: 2;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+    
+    /*background-color: #00AF23;*/
+/*	background-image:url("../images/gray.jpg");*/
+}
+.background-div-text {
+    position:absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    color: #292929;
+}
+#coming-soon {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    left: 30%;
+    bottom: 17%;
+    z-index: 15;
+    font-size: 5vw;
+}
+.splash-partition {
+	position: absolute;
+	float: left;
+	z-index: 10;
+	height: 100%;
+    letter-spacing: 1.2ex;
+}
+.left-door {
+    border-right: 4px solid rgb(255, 245, 0);
+	/* background-color: #577FB1; */
+	/* orange: background-color: #EC9718;*/
+    background-color: #48DFD9;
+	color: #292929;
+	left: -80%;
+	width: 65%;
+	overflow: hidden;
+}
+.left-door .unskew {
+	height: 100%;
+	width: 100%;
+	left: 20%;
+	position: relative;
+}
+.gears {
+	/*background-image: url('../images/gear.png');*/
+    /*background: url('../images/10-tooth-gear.svg');*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+#big-gear-left {
+	top: 40%;
+	position: absolute;
+	height: 70%;
+	width: 50%;
+	right: 3%;
+}
+#gear1-left {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    opacity: 0.3;
+    left: 2%;
+    top: -12%;
+}
+#gear1-left img {
+    width: 80%;
+}
+#gear1-right {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    right: -8%;
+    bottom: -11%;
+    opacity: 0.3;
+}
+#gear1-right img {
+    height: 100%;
+    width: 100%;
+}
+.right-door {
+    border-left: 4px solid rgb(255, 245, 0);
+	/*orange: background-color: #524C40;*/
+    background-color: #405252;
+	position: relative;
+	/* color: #90B8EB; */
+	color: #fff;
+	width: 65%;
+	left: 105%;
+	overflow: hidden;
+}
+.right-door-bg {
+	left: -10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*background-image: url('../images/street1.jpg');*/
+/*	background-size: cover;
+	background-position: 110% 10%;
+	background-repeat: no-repeat;
+	opacity: 0.3;*/
+}
+.left-door span, .right-door span {
+	font-family: 'forque', 'impact';
+	font-size: 8vw;
+	position: absolute;
+	top: 40%;
+	vertical-align: middle;
+}
+.left-door span {
+	right: 0px;
+	padding-right: 2%;
+}
+.right-door span {
+	left: 0px;
+	padding-left: 2%;
+}
+#gear2-right {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    right: 3%;
+    top: 7%;
+}
+.pwd span {
+    font: 26px Monaco, MonoSpace;
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    margin-left: 0px;
+    bottom: 0px;
+    
+    -webkit-transform-origin:  bottom center;
+	 -moz-transform-origin:  bottom center;
+	 -o-transform-origin:  bottom center;
+	 -ms-transform-origin:  bottom center;
+	 transform-origin:  bottom center;
+	 }
+
+.pwd .char1 {
+	-webkit-transform: rotate(-24deg);
+	-moz-transform: rotate(-24deg);
+	-o-transform: rotate(-24deg);
+	-ms-transform: rotate(-24deg);
+	transform: rotate(-24deg);
+}
+
+.pwd .char2 {
+	-webkit-transform: rotate(-18deg);
+	-moz-transform: rotate(-18deg);
+	-o-transform: rotate(-18deg);
+	-ms-transform: rotate(-18deg);
+	transform: rotate(-18deg);
+}
+
+.pwd .char3 {
+	-webkit-transform: rotate(-12deg);
+	-moz-transform: rotate(-12deg);
+	-o-transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg);
+	transform: rotate(-12deg);
+}
+
+.pwd .char4 {
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	-ms-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+
+.pwd .char5 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.pwd .char6 {
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	-ms-transform: rotate(6deg);
+	transform: rotate(6deg);
+}
+
+.pwd .char7 {
+	-webkit-transform: rotate(12deg);
+	-moz-transform: rotate(12deg);
+	-o-transform: rotate(12deg);
+	-ms-transform: rotate(12deg);
+	transform: rotate(12deg);
+}
+
+.pwd .char8 {
+	-webkit-transform: rotate(18deg);
+	-moz-transform: rotate(18deg);
+	-o-transform: rotate(18deg);
+	-ms-transform: rotate(18deg);
+	transform: rotate(18deg);
+}
+
+.pwd .char9 {
+	-webkit-transform: rotate(24deg);
+	-moz-transform: rotate(24deg);
+	-o-transform: rotate(24deg);
+	-ms-transform: rotate(24deg);
+	transform: rotate(24deg);
+}
+
+.pwd .char10 {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+#si-logo {
+    position: absolute;
+    width: 8%;
+    height: 25%;
+    z-index: 15;
+    bottom: -30%;
+    left: 10%;
+    cursor: pointer;
+}
+#si-logo img {
+    height: 100%;
+    width: 100%;
+    margin-left: -42%;
+    -webkit-transform: rotateZ(5deg);
+    -moz-transform: rotateZ(5deg);
+    -o-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+
+}
