@@ -51,6 +51,9 @@ body {
 	   -moz-transform: skew(15deg);
 	     -o-transform: skew(15deg);
 	        transform: skew(15deg);
+    background-image: url('../images/buildings1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .background-div {
 	z-index: 2;
@@ -87,7 +90,6 @@ body {
     letter-spacing: 1.2ex;
 }
 .left-door {
-    border-right: 4px solid rgb(255, 245, 0);
 	/* background-color: #577FB1; */
 	/* orange: background-color: #EC9718;*/
     background-color: #48DFD9;
@@ -101,6 +103,7 @@ body {
 	width: 100%;
 	left: 20%;
 	position: relative;
+    background-position: 0 516px;
 }
 .gears {
 	/*background-image: url('../images/gear.png');*/
@@ -109,13 +112,13 @@ body {
 	background-repeat: no-repeat;
 	opacity: 0.3;
 }
-#big-gear-left {
+/*#big-gear-left {
 	top: 40%;
 	position: absolute;
 	height: 70%;
 	width: 50%;
 	right: 3%;
-}
+}*/
 #gear1-left {
     position: absolute;
     height: 40%;
@@ -127,20 +130,13 @@ body {
 #gear1-left img {
     width: 80%;
 }
-#gear1-right {
+#big-gear-right {
+    top: -15%;
     position: absolute;
-    width: 40%;
-    height: 40%;
-    right: -8%;
-    bottom: -11%;
-    opacity: 0.3;
-}
-#gear1-right img {
-    height: 100%;
-    width: 100%;
+    right: -7%;
 }
 .right-door {
-    border-left: 4px solid rgb(255, 245, 0);
+    border-left: 4px solid rgb(0, 0, 0);
 	/*orange: background-color: #524C40;*/
     background-color: #405252;
 	position: relative;
@@ -155,11 +151,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	/*background-image: url('../images/street1.jpg');*/
-/*	background-size: cover;
-	background-position: 110% 10%;
-	background-repeat: no-repeat;
-	opacity: 0.3;*/
+    background-position: 0px 516px;
 }
 .left-door span, .right-door span {
 	font-family: 'forque', 'impact';
