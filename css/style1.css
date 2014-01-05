@@ -37,7 +37,8 @@ body {
 	           width: 100%;
 }
 .container-bg {
-    background-image: url('../images/road.jpg');
+    /*background-image: url('../images/road.jpg');*/
+    background-color: #000;
     background-position: -17% 0;
     position: absolute;
     height: 100%;
@@ -76,7 +77,8 @@ body {
     width: 100%;
     position:absolute;
     /*color: #292929;*/
-    color: rgb(154, 144, 4);
+    /*color: rgb(154, 144, 4);*/
+    color: #ddd;
     z-index: 3;
 }
 #coming-soon {
@@ -99,7 +101,8 @@ body {
 }
 .left-door {
     border-right: 2px dashed black;
-    background-color: #48C7DF;
+    /*background-color: #48C7DF;*/
+    background-color: #B8FC28;
 	color: #405252;
 	left: -80%;
 	width: 65%;
@@ -176,7 +179,7 @@ body {
 .waves {
     position: absolute;
     width: 10%;
-    right: 54.5%;
+    right: 15.5%;
     bottom: 30%;
 }
 .waves img {
@@ -186,7 +189,7 @@ body {
 .tower {
     position: absolute;
     width: 23%;
-    right: 50%;
+    right: 11%;
     bottom: 0%;
     height: 45%;
 }
@@ -197,6 +200,7 @@ body {
     width: 20px;
     margin-left: 0px;
     bottom: 0px;
+    color: black;
     
     -webkit-transform-origin:  bottom center;
 	 -moz-transform-origin:  bottom center;
@@ -291,7 +295,7 @@ body {
     height: 25%;
     z-index: 15;
     bottom: -30%;
-    left: 10%;
+    left: 7%;
     cursor: pointer;
 }
 #si-logo img {

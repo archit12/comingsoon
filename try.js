@@ -8,14 +8,14 @@ window.onload = function(){
 	canvas.width = W;
 	canvas.height = H;
 	
-    var mp = 50;
+    var mp = 100;
 	var particles = [];
 	for(var i = 0; i < mp; i++)
 	{
 		particles.push({
 			x: Math.random()*W, 
 			y: Math.random()*H, 
-			r: Math.random()*4+1,
+			r: Math.random()*2+1,
 			d: Math.random()*mp
         })
 	}
@@ -23,7 +23,7 @@ window.onload = function(){
 	function draw()
 	{
 		ctx.clearRect(0, 0, W, H);	
-		ctx.fillStyle = "rgba(0, 0, 0, 0)";
+		ctx.fillStyle = "rgba(200, 200, 225, 1)";
 		ctx.beginPath();
 		for(var i = 0; i < mp; i++)
 		{
@@ -50,24 +50,24 @@ window.onload = function(){
 			{
 				if(i%3 > 0)
 				{
-					particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+					particles[i] = {x: Math.random()*W, y: -5, r: p.r, d: p.d};
 				}
 				else
                 {
 					if(Math.sin(angle) > 0)
 					{
-				        particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+				        particles[i] = {x: -1, y: Math.random()*H, r: p.r, d: p.d};
 					}
 					else
 					{
-                        particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+                        particles[i] = {x: W+1, y: Math.random()*H, r: p.r, d: p.d};
 					}
 				}
 			}
 		}
 	}
 	
-	setInterval(draw, 33);
+	setInterval(draw, 43);
 }
 
 

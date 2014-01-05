@@ -168,7 +168,7 @@
     //function to display SI logo at the end of the animation
     display_logo = function () {
         var footer = document.getElementById('si-logo'),
-            bottom = 0,
+            bottom = 14,
             current_bottom = -25;
         (function push_up_logo() {
             footer.style.bottom = current_bottom + "%";
@@ -189,7 +189,9 @@
         
         //close doors initially
         setTimeout(function () {
-            doors.doors_close(left_door, right_door);
+            doors.doors_close(left_door, right_door, function () {
+                document.getElementById('container-bg').style.backgroundImage = '../images/road.jpg';
+            });
             //fade background image of TT13
             // $(dom.background).animate({'opacity':0},600, function () {
             // });
