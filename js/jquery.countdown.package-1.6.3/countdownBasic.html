@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<link rel="stylesheet" href="jquery.countdown.css">
+<style type="text/css">
+#defaultCountdown {
+        width:250px;margin:20px 3px;height:60px;float:left;padding:5px;text-align:center;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #222222;
+            color: #f8f6ee;
+            font-weight: 700;
+            font-size: 18px;    
+            -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+                    border-radius: 3px;
+            -webkit-box-shadow: inset 0 1px #4d4b46;
+                -moz-box-shadow: inset 0 1px #4d4b46;
+                    box-shadow: inset 0 1px #4d4b46;
+            background: #232323; /* Old browsers */
+            background: -moz-linear-gradient(top,  #232323 0%, #000000 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#232323), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #232323 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #232323 0%,#000000 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #232323 0%,#000000 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #232323 0%,#000000 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ }
+#defaultCountdown:hover{
+     background: #000000; /* Old browsers */
+            background: -moz-linear-gradient(top,  #000000 0%, #232323 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #000000 0%,#232323 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #000000 0%,#232323 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #000000 0%,#232323 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #000000 0%,#232323 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#232323',GradientType=0 ); /* IE6-9 */
+    }
+    </style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(2014, 3-1, 26);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+</head>
+<body>
+
+<div id="defaultCountdown"></div>
+</body>
+</html>
