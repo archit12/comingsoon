@@ -176,7 +176,7 @@ body {
 .waves {
     position: absolute;
     width: 10%;
-    right: 25.5%;
+    right: 54.5%;
     bottom: 30%;
 }
 .waves img {
@@ -186,7 +186,7 @@ body {
 .tower {
     position: absolute;
     width: 23%;
-    right: 21%;
+    right: 50%;
     bottom: 0%;
     height: 45%;
 }
